@@ -835,6 +835,10 @@ video {
   border-width: 1px;
 }
 
+.focus-within\:border-2:focus-within {
+  border-width: 2px;
+}
+
 .focus-within\:border-StrongCyan:focus-within {
   --tw-border-opacity: 1;
   border-color: hsl(172 67% 45% / var(--tw-border-opacity));
@@ -862,6 +866,10 @@ video {
 
 .focus\:border:focus {
   border-width: 1px;
+}
+
+.focus\:border-2:focus {
+  border-width: 2px;
 }
 
 .focus\:border-StrongCyan:focus {
