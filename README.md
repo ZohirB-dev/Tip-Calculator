@@ -13,7 +13,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -26,15 +25,17 @@ Users should be able to:
 
 ### Screenshot
 
-![(./design/Screenshot(1).png)
-(./design/Screenshot(2).png)
-(./design/Screenshot(3).png)]
+![Screenshot 1](./design/Screenshot(1).png)
+![Screenshot 2](./design/Screenshot(2).png)
+![Screenshot 3](./design/Screenshot(3).png)
+
 
 
 ### Links
 
-- Solution URL: [(https://github.com/ZohirB-dev/Tip-Calculator.git)](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/ZohirB-dev/Tip-Calculator.git)
+- Live Site URL: [Live Site](https://zohirb-dev.github.io/Tip-Calculator/)
+
 
 ## My process
 
@@ -52,8 +53,6 @@ Users should be able to:
 Using Tailwind CSS for the first time, it's simple and effictive in styling web elements. For those reasons, I'm incentivesed in incorporating Tailwind CSS into my future projects, considering its utility classes and as well as streamlined approach to building responsive designs.
 
 A better understanding of default element behaviours and to recognise when to take them into consideration.
-
-
 
 ## Author
 
