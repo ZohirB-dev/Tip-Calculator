@@ -10,7 +10,8 @@ module.exports = {
       LightGrayishCyan: "hsl(185, 41%, 84%)",
       VeryLightGrayishCyan: "hsl(189, 41%, 97%)",
       White: "hsl(0, 0%, 100%)",
-      StrongCyan: "hsl(172, 67%, 45%)"
+      StrongCyan: "hsl(172, 67%, 45%)",
+      red:"rgb(252 165 165)"
     },
     fontFamily: {
       spaceMono:['Space Mono', 'Sans-serif'],

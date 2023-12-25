@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
 
 
 
@@ -51,26 +50,30 @@
 
               <div class="flex w-full justify-between bg-VeryLightGrayishCyan px-4 py-2 rounded mt-2 focus-within:border-StrongCyan focus-within:border-2">
                 <img src="images/icon-dollar.svg" alt="icon-dollar">
-                <input id="bill" class="w-auto bg-transparent text-right custom-number-input text-2xl outline-none" type="number" placeholder="0">
+                <input id="bill" class="w-auto bg-VeryLightGrayishCyan text-right custom-number-input text-2xl outline-none" type="number" placeholder="0">
               </div>
             </div>
             <div class="my-12">
               <label class="text-GrayishCyan">Select Tip %</label>
               <div id="tips" class="grid grid-cols-2 md:grid-cols-3 gap-4 my-3">
-                <button data-percentage="5" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" disabled>5% </button>
-                <button data-percentage="10" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan"  disabled>10%</button>
-                <button data-percentage="15" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" disabled>15%</button>
-                <button data-percentage="25" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" disabled>25%</button>
-                <button data-percentage="50" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" disabled>50%</button>
-                <input id="custom" class="custom-number-input text-center bg-VeryLightGrayishCyan text-2xl text-DarkCyan placeholder-DarkGrayishCyan focus:placeholder:opacity-0 capitalize outline-none focus:border-StrongCyan focus:border-2 rounded" type="number" placeholder="custom"></input>
+                <button  disabled style="display: none;"></button>
+                <button data-percentage="5" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan " >5% </button>
+                <button data-percentage="10" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan"  >10%</button>
+                <button data-percentage="15" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" >15%</button>
+                <button data-percentage="25" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" >25%</button>
+                <button data-percentage="50" class="bg-DarkCyan rounded py-1 text-White font text-2xl hover:bg-StrongCyan hover:text-DarkCyan" >50%</button>
+                <input id="custom" class="custom-number-input text-center bg-VeryLightGrayishCyan text-2xl text-DarkCyan placeholder-DarkGrayishCyan focus:placeholder:opacity-0 capitalize outline-none focus:border-StrongCyan focus:border-2 rounded" type="number" placeholder="Custom"></input>
               </div>
             </div>
             <div class=" flex flex-col">
-              <label class="text-GrayishCyan">Number of People</label>
-
+              
+              <div class="flex justify-between">
+                <label class="text-GrayishCyan">Number of People</label>
+                <label id="error-message" class="text-red invisible">Can't be zero</label>
+              </div>
               <div class="flex w-full justify-between bg-VeryLightGrayishCyan px-4 py-2 rounded mt-2  focus-within:border-StrongCyan focus-within:border-2">
                 <img src="images/icon-person.svg" alt="icon-dollar">
-                <input id="people" class="w-auto bg-transparent text-right custom-number-input text-2xl outline-none" type="number" placeholder="0">
+                <input id="people" class="w-auto bg-VeryLightGrayishCyan text-right custom-number-input text-2xl outline-none" type="number" placeholder="0">
               </div>
             </div>
           </form>
@@ -84,7 +87,7 @@
                 <p class="text-White">Tip Amount</p>
                 <p class="text-GrayishCyan text-sm">/ person</p>
               </div>
-              <h1 id="tip" class="text-4xl text-StrongCyan">£0.00</h1>
+              <h1 id="tip" class="text-4xl text-StrongCyan">$0.00</h1>
             </div>
 
             <div class="flex justify-between ">
@@ -92,10 +95,10 @@
                 <p class="text-White">Total</p>
                 <p class="text-GrayishCyan text-sm">/ person</p>
               </div>
-              <h1 id="total" class="text-4xl text-StrongCyan">£0.00</h1>
+              <h1 id="total" class="text-4xl text-StrongCyan">$0.00</h1>
             </div>
           </div>
-          <button id="reset" class="text-center bg-StrongCyan text-DarkCyan rounded w-full py-2 hover:bg-LightGrayishCyan mt-10 md:mt-0">Reset</button>
+          <button id="reset" class="text-center bg-opacity-40 bg-StrongCyan text-DarkCyan rounded w-full py-2 hover:bg-LightGrayishCyan mt-10 md:mt-0">RESET</button>
         </div>
 
       </section>
